@@ -1,0 +1,206 @@
+@import url("http://fonts.cdnfonts.com/css/allerta-stencil");
+body {
+  font-size: 18px;
+  background-color: #f2acbf;
+  font-family: Helvetica, "Allerta Stencil", Helvetica, sans-sarif;
+}
+
+.container {
+  background-color: #382e59;
+  margin-top: 8px;
+  height: auto;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #fffff2;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #382e59;
+  border-radius: 35px;
+  padding-bottom: 50px;
+}
+.container h1 {
+  text-shadow: 3px 3px #28213d;
+  -webkit-text-stroke: 1px #7121a6;
+}
+.container div {
+  padding: 20px;
+}
+
+.head-container {
+  background-color: #3d1673;
+  height: 150px;
+  margin: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #382e59;
+  border-radius: 25px;
+}
+
+.head-title {
+  float: left;
+  margin: 25px;
+  color: #fffff2;
+  font-size: 18px;
+}
+
+.head-flexbox {
+  float: right;
+  text-align: center;
+  margin-top: 22px;
+  margin-right: 10px;
+}
+
+.nav-btn {
+  background-color: #f2a0c6;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #382e59;
+  border-radius: 35px;
+  width: 150px;
+  height: 100px;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+.nav-btn:hover {
+  box-shadow: 3px 3px #fffff2;
+}
+
+.home-sub-head {
+  margin-left: 60px;
+  margin-right: 60px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #f2a0c6;
+  border-radius: 25px;
+}
+
+#list-flex {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#home-image-ts {
+  width: 450px;
+}
+
+.project-box {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #7121a6;
+  border-radius: 20px;
+  background-color: #7121a6;
+  padding: 10px;
+  margin: 20px;
+  font-size: 16px;
+  width: 350px;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  justify-content: center;
+}
+
+.project-nav-button {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #382e59;
+  border-radius: 20px;
+  width: 120px;
+  height: 60px;
+  background-color: #f2a0c6;
+  margin: 10px;
+  margin-top: 0px;
+}
+.project-nav-button:hover {
+  box-shadow: 3px 3px #fffff2;
+}
+
+#proj-btn-1 {
+  float: left;
+}
+
+#proj-btn-2 {
+  float: right;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 25px;
+  justify-content: space-around;
+}
+
+.proj-img-footer {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #382e59;
+  border-radius: 20px;
+  height: 180px;
+}
+
+.project-image {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #f2a0c6;
+  border-radius: 20px;
+  height: 150px;
+}
+
+.contact-box {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #f2a0c6;
+  border-radius: 25px;
+  margin: 20px;
+  text-align: center;
+  width: 700px;
+}
+.contact-box p {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.proj-img-contact {
+  height: 350px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #382e59;
+  border-radius: 25px;
+  margin: 20px;
+}
+
+.four-o-four {
+  margin: 50px;
+}
+
+/*# sourceMappingURL=index.css.map */

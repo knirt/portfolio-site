@@ -1,0 +1,217 @@
+@import url("http://fonts.cdnfonts.com/css/allerta-stencil");
+$fontStack: Helvetica, "Allerta Stencil", Helvetica, sans-sarif;
+$defFontSize: 18px;
+
+//Color scheme
+
+$lightPink: #f2acbf; //ACCENT
+$brightPink: #f2a0c6; //MAIN
+$lightPurple: #7121a6; //MAIN
+$darkPurple: #3d1673; //ACCENT
+$darkGrey: #382e59; //MAIN
+
+//MIXINS
+
+@mixin borderThemeDark($radius: 0px) {
+    border-style: solid;
+    border-width: 1px;
+    border-color: $darkGrey;
+    border-radius: $radius;
+}
+
+@mixin borderThemeLight($radius: 0px) {
+    border-style: solid;
+    border-width: 5px;
+    border-color: $brightPink;
+    border-radius: $radius;
+}
+
+@mixin subContainer() {
+    border-style: solid;
+    border-width: 1px;
+    border-color: $lightPurple;
+    border-radius: 20px;
+    background-color: $lightPurple;
+    padding: 10px;
+    margin: 20px;
+}
+
+@mixin basicFlexbox() {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin basicButton() {
+    text-align: center;
+    &:hover {
+        box-shadow: 3px 3px #fffff2;
+    }
+    font-weight: 700;
+    font-size: 16px;
+}
+
+body {
+    font-size: $defFontSize;
+    background-color: $lightPink;
+    font-family: $fontStack;
+}
+
+.container {
+    background-color: $darkGrey;
+    margin-top: 8px;
+    height: auto;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #fffff2;
+    h1 {
+        text-shadow: 3px 3px #28213d;
+        -webkit-text-stroke: 1px $lightPurple;
+    }
+    div {
+        padding: 20px;
+    }
+    @include borderThemeDark($radius: 35px);
+    padding-bottom: 50px;
+}
+
+//NAVBAR STYLES
+
+.head-container {
+    background-color: $darkPurple;
+    height: 150px;
+    margin: 0px;
+    @include borderThemeDark($radius: 25px);
+}
+
+.head-title {
+    float: left;
+    margin: 25px;
+    color: #fffff2;
+    font-size: 18px;
+}
+
+.head-flexbox {
+    float: right;
+    text-align: center;
+    margin-top: 22px;
+    margin-right: 10px;
+}
+
+.nav-btn {
+    background-color: $brightPink;
+    @include borderThemeDark($radius: 35px);
+    width: 150px;
+    height: 100px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    @include basicButton();
+}
+
+//HOME
+
+.home-sub-head {
+    margin-left: 60px;
+    margin-right: 60px;
+    @include borderThemeLight($radius: 25px);
+}
+
+#list-flex {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#home-image-ts {
+    width: 450px;
+}
+
+//PROJECTS
+
+.project-box {
+    @include subContainer();
+    font-size: 16px;
+    width: 350px;
+    text-align: center;
+}
+
+.projects-container {
+    @include basicFlexbox();
+    padding: 5px;
+    justify-content: center;
+}
+
+.project-nav-button {
+    @include basicButton();
+    @include borderThemeDark($radius: 20px);
+    width: 120px;
+    height: 60px;
+    background-color: $brightPink;
+    margin: 10px;
+    margin-top: 0px;
+}
+
+#proj-btn-1 {
+    float: left;
+}
+
+#proj-btn-2 {
+    float: right;
+}
+
+.img-container {
+    @include basicFlexbox();
+    padding: 25px;
+    justify-content: space-around;
+}
+
+.proj-img-footer {
+    @include borderThemeDark($radius: 20px);
+    height: 180px;
+}
+
+.project-image {
+    @include borderThemeLight($radius: 20px);
+    height: 150px;
+}
+
+//CONTACT
+
+.contact-box {
+    @include borderThemeLight($radius: 25px);
+    margin: 20px;
+    text-align: center;
+    width: 700px;
+
+    p {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+}
+
+.proj-img-contact {
+    height: 350px;
+    @include borderThemeDark($radius: 25px);
+    margin: 20px;
+}
+
+.four-o-four {
+    margin: 50px;
+}
