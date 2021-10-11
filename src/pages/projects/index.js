@@ -37,6 +37,7 @@ const projectInfo = {
         description:
             "This site was made using gatsby.js, a static site generator that utilizes react to produce static html sites efficiently. It is able to harness the efficiency of react without the bloat. It was styled using SASS.",
         imgRef: portfolioImg,
+        codeLink: "https://github.com/knirt/portfolio-site",
     },
 }
 
@@ -66,6 +67,7 @@ const Projects = function () {
                     imgRef={projectInfo.portfolio.imgRef}
                     intro={projectInfo.portfolio.intro}
                     description={projectInfo.portfolio.description}
+                    codeLink={projectInfo.portfolio.codeLink}
                 ></ProjectDiv>
             </div>
         </React.Fragment>
