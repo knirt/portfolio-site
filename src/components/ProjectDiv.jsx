@@ -17,9 +17,15 @@ const ProjectDiv = function (props) {
                         See source code
                     </button>
                 </a>
-                <button id="proj-btn-2" className="project-nav-button">
-                    See site
-                </button>
+                <a
+                    href={props.siteLink}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                >
+                    <button id="proj-btn-2" className="project-nav-button">
+                        See site
+                    </button>
+                </a>
             </div>
         </div>
     )

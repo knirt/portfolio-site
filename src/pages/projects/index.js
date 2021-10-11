@@ -16,6 +16,7 @@ const projectInfo = {
             "I used react, typescript, and redux to build the app. All the books are stored in a database on my VPS using mariaDB (libre version of MySQL), and I wrote the backend in PHP.",
         imgRef: libraryImg,
         codeLink: "https://github.com/knirt/library-website",
+        siteLink: "",
     },
     recipes: {
         name: "Forkify",
@@ -24,6 +25,7 @@ const projectInfo = {
             "Created using nothing but vanilla JS. Its a basic recipe site which calls an API (not developed by me) with bookmarking, keyword search, and the ability to submit new recipies of your own via POST request.",
         imgRef: recipeImg,
         codeLink: "https://github.com/knirt/forkify-recipe-app",
+        siteLink: "https://relaxed-cooking-3fe4b3.netlify.app",
     },
     starwars: {
         name: "Galactic Empire Intelligence",
@@ -38,6 +40,7 @@ const projectInfo = {
             "This site was made using gatsby.js, a static site generator that utilizes react to produce static html sites efficiently. It is able to harness the efficiency of react without the bloat. It was styled using SASS.",
         imgRef: portfolioImg,
         codeLink: "https://github.com/knirt/portfolio-site",
+        siteLink: "https://mtrinkus.xyz",
     },
 }
 
@@ -56,18 +59,21 @@ const Projects = function () {
                     intro={projectInfo.library.intro}
                     description={projectInfo.library.description}
                     codeLink={projectInfo.library.codeLink}
+                    siteLink={projectInfo.library.siteLink}
                 ></ProjectDiv>
                 <ProjectDiv
                     imgRef={projectInfo.recipes.imgRef}
                     intro={projectInfo.recipes.intro}
                     description={projectInfo.recipes.description}
                     codeLink={projectInfo.recipes.codeLink}
+                    siteLink={projectInfo.recipes.siteLink}
                 ></ProjectDiv>
                 <ProjectDiv
                     imgRef={projectInfo.portfolio.imgRef}
                     intro={projectInfo.portfolio.intro}
                     description={projectInfo.portfolio.description}
                     codeLink={projectInfo.portfolio.codeLink}
+                    siteLink={projectInfo.portfolio.siteLink}
                 ></ProjectDiv>
             </div>
         </React.Fragment>
