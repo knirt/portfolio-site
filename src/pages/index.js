@@ -1,7 +1,7 @@
 import React from "react"
 import Head from "../components/Head"
 import Layout from "../components/Layout"
-import tsIMG from "../images/ts-react.png"
+import tsIMG from "../../static/ts-react.png"
 
 export default function Home() {
     return (

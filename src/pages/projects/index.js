@@ -1,12 +1,12 @@
 import React from "react"
 import Head from "../../components/Head"
 import ProjectDiv from "../../components/ProjectDiv"
-import archImg from "../../images/arch-anime.png"
-import javaImg from "../../images/javascript.png"
-import reduxImg from "../../images/redux.png"
-import libraryImg from "../../images/library.png"
-import recipeImg from "../../images/recipeBook.png"
-import portfolioImg from "../../images/portfolio.png"
+import archImg from "../../../static/arch-anime.png"
+import javaImg from "../../../static/javascript.png"
+import reduxImg from "../../../static/redux.png"
+import libraryImg from "../../../static/library.png"
+import recipeImg from "../../../static/recipeBook.png"
+import portfolioImg from "../../../static/portfolio.png"
 
 const projectInfo = {
     library: {

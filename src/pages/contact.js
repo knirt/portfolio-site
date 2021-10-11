@@ -1,6 +1,7 @@
 import React from "react"
 import Head from "../components/Head"
-import arminImg from "../images/arminIMG.png"
+import arminImg from "../../static/arminIMG.png"
+
 const Contact = function () {
     return (
         <React.Fragment>
