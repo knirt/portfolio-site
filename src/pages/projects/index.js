@@ -13,16 +13,16 @@ const projectInfo = {
         name: "Book Collection",
         intro: "This is a web app I built to store and display my collection of literature and academic writing",
         description:
-            "I used react, typescript, and redux to build the app. The collection can be searched and filtered by catagory or author/title, and there is a favorites page that acts like a shopping cart.",
+            "I used react, typescript, and redux to build the app. The collection can be searched and filtered by catagory or author/title, and there is a favorites page that acts like a shopping cart. Note: It is very slow in initial load because I have not set it up as a subdomain on my VPS yet. That is coming soon. Also, I am currently working on a backend that allows account creation and user authentication.",
         imgRef: libraryImg,
         codeLink: "https://github.com/knirt/library-website",
-        siteLink: "",
+        siteLink: "https://library-collection-797473.netlify.app",
     },
     recipes: {
         name: "Forkify",
         intro: "My first ever web app, a recipe site. This was a project I did as part of a Udemy course",
         description:
-            "Created using nothing but vanilla JS. Its a basic recipe site which calls an API (not developed by me) with bookmarking, keyword search, and the ability to submit new recipies of your own via POST request.",
+            "Created using nothing but vanilla JS. Its a basic recipe site which calls an API (not developed by me) with bookmarking, keyword search, and the ability to submit new recipies of your own via POST request. Bookmarks are saved via local browser storage, I am not planning on changing this but I am planning on adding user accounts with a backend on the library site.",
         imgRef: recipeImg,
         codeLink: "https://github.com/knirt/forkify-recipe-app",
         siteLink: "https://relaxed-cooking-3fe4b3.netlify.app",
