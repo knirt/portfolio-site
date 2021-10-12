@@ -113,10 +113,28 @@ body {
 }
 
 //HOME
+.home-flex {
+    @include basicFlexbox();
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.title-image {
+    height: 280px;
+    margin-left: 50px;
+    margin-right: 50px;
+    @include borderThemeDark($radius: 25px);
+}
+
+#stuff-i-can {
+    text-align: center;
+    text-decoration: underline;
+}
 
 .home-sub-head {
     margin-left: 60px;
     margin-right: 60px;
+    margin-top: 0px;
     @include borderThemeLight($radius: 25px);
 }
 
@@ -127,6 +145,16 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+    ul {
+        color: #fffff2;
+        background-color: $brightPink;
+        @include borderThemeLight($radius: 25px);
+        padding: 10px;
+        li {
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+    }
 }
 
 #home-image-ts {

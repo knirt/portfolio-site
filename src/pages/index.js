@@ -2,21 +2,23 @@ import React from "react"
 import Head from "../components/Head"
 import Layout from "../components/Layout"
 import tsIMG from "../../static/ts-react.png"
+import meIMG from "../../static/me.jpg"
 
 export default function Home() {
     return (
         <Layout>
             <Head></Head>
             <div className="container home-container">
-                <div>
-                    <h1 className="title-text">
-                        Hi, my name is Matthew Trinkus
-                    </h1>
-                    <h1>
-                        This is a site made to convince you to hire me (please
-                        hire me)
-                    </h1>
+                <div className="home-flex">
+                    <div>
+                        <h1 className="title-text">
+                            Hi, my name is Matthew Trinkus
+                        </h1>
+                        <h1>This is a site made to convince you to hire me</h1>
+                    </div>
+                    <img src={meIMG} alt="" className="title-image" />
                 </div>
+                <h1 id="stuff-i-can">Stuff I can do:</h1>
                 <div className="home-sub-head">
                     <h2 className="title-text">
                         I can make web apps and deploy them, so I would like to
@@ -26,14 +28,27 @@ export default function Home() {
                     </h2>
                     <div id="list-flex">
                         <ul>
-                            <li>JavaScript</li>
-                            <li>HTML / CSS</li>
-                            <li>React</li>
-                            <li>TypeScript</li>
-                            <li>Redux</li>
-                            <li>SASS (CSS preprocessed syntax)</li>
-                            <li>Bash Scripting</li>
-                            <li>Familiar with Docker and NGINX</li>
+                            <li>
+                                <b>JavaScript</b>
+                            </li>
+                            <li>
+                                <b>HTML / CSS</b>
+                            </li>
+                            <li>
+                                <b>React</b>
+                            </li>
+                            <li>
+                                <b>TypeScript</b>
+                            </li>
+                            <li>
+                                <b>Redux</b>
+                            </li>
+                            <li>
+                                <b>SASS (CSS preprocessed syntax)</b>
+                            </li>
+                            <li>
+                                <b>Familiar with NGINX and server Linux</b>
+                            </li>
                         </ul>
                         <img id="home-image-ts" src={tsIMG} alt="" />
                     </div>

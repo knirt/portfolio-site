@@ -13,14 +13,14 @@ const projectInfo = {
         name: "Book Collection",
         intro: "This is a web app I built to store and display my collection of literature and academic writing",
         description:
-            "I used react, typescript, and redux to build the app. All the books are stored in a database on my VPS using mariaDB (libre version of MySQL), and I wrote the backend in PHP.",
+            "I used react, typescript, and redux to build the app. The collection can be searched and filtered by catagory or author/title, and there is a favorites page that acts like a shopping cart.",
         imgRef: libraryImg,
         codeLink: "https://github.com/knirt/library-website",
         siteLink: "",
     },
     recipes: {
         name: "Forkify",
-        intro: "My first ever web app, a recipe site. This was a guided project I did as part of a Udemy course on JS",
+        intro: "My first ever web app, a recipe site. This was a project I did as part of a Udemy course",
         description:
             "Created using nothing but vanilla JS. Its a basic recipe site which calls an API (not developed by me) with bookmarking, keyword search, and the ability to submit new recipies of your own via POST request.",
         imgRef: recipeImg,
