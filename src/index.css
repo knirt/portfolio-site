@@ -20,8 +20,8 @@ body {
   padding-bottom: 50px;
 }
 .container h1 {
-  text-shadow: 3px 3px #28213d;
   -webkit-text-stroke: 1px #7121a6;
+  text-shadow: 3px 3px #28213d;
 }
 .container div {
   padding: 20px;
@@ -29,30 +29,38 @@ body {
 
 .head-container {
   background-color: #3d1673;
-  height: 150px;
   margin: 0px;
   border-style: solid;
   border-width: 1px;
   border-color: #382e59;
   border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .head-title {
-  float: left;
   margin: 25px;
   color: #fffff2;
   font-size: 18px;
 }
 
 .head-flexbox {
-  float: right;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
-  margin-top: 22px;
   margin-right: 10px;
 }
 
 .nav-btn {
   background-color: #f2a0c6;
+  color: #28231d;
   border-style: solid;
   border-width: 1px;
   border-color: #382e59;
@@ -78,15 +86,20 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 0px;
+  flex-wrap: nowrap;
+}
+.home-flex div {
+  margin-left: 40px;
+  margin-right: 0px;
 }
 
 .title-image {
   height: 280px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 20px;
+  margin-right: 60px;
   border-style: solid;
-  border-width: 1px;
-  border-color: #382e59;
+  border-width: 5px;
+  border-color: #f2a0c6;
   border-radius: 25px;
 }
 
@@ -112,6 +125,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 #list-flex ul {
   color: #fffff2;
@@ -129,8 +143,22 @@ body {
 
 #home-image-ts {
   width: 450px;
+  margin-left: 10px;
 }
 
+@media only screen and (max-width: 480px) {
+  #home-image-ts {
+    width: 250px;
+  }
+
+  .home-flex {
+    flex-wrap: wrap;
+  }
+
+  .title-image {
+    height: 200px;
+  }
+}
 .project-box {
   border-style: solid;
   border-width: 1px;

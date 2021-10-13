@@ -53,6 +53,11 @@ $darkGrey: #382e59; //MAIN
     font-size: 16px;
 }
 
+@mixin prettyText() {
+    -webkit-text-stroke: 1px $lightPurple;
+    text-shadow: 3px 3px #28213d;
+}
+
 body {
     font-size: $defFontSize;
     background-color: $lightPink;
@@ -68,8 +73,7 @@ body {
     margin-right: 50px;
     color: #fffff2;
     h1 {
-        text-shadow: 3px 3px #28213d;
-        -webkit-text-stroke: 1px $lightPurple;
+        @include prettyText();
     }
     div {
         padding: 20px;
@@ -82,27 +86,27 @@ body {
 
 .head-container {
     background-color: $darkPurple;
-    height: 150px;
     margin: 0px;
     @include borderThemeDark($radius: 25px);
+    @include basicFlexbox();
+    justify-content: space-between;
 }
 
 .head-title {
-    float: left;
     margin: 25px;
     color: #fffff2;
     font-size: 18px;
 }
 
 .head-flexbox {
-    float: right;
+    @include basicFlexbox();
     text-align: center;
-    margin-top: 22px;
     margin-right: 10px;
 }
 
 .nav-btn {
     background-color: $brightPink;
+    color: #28231d;
     @include borderThemeDark($radius: 35px);
     width: 150px;
     height: 100px;
@@ -117,13 +121,18 @@ body {
     @include basicFlexbox();
     justify-content: center;
     margin-bottom: 0px;
+    flex-wrap: nowrap;
+    div {
+        margin-left: 40px;
+        margin-right: 0px;
+    }
 }
 
 .title-image {
     height: 280px;
-    margin-left: 50px;
-    margin-right: 50px;
-    @include borderThemeDark($radius: 25px);
+    margin-left: 20px;
+    margin-right: 60px;
+    @include borderThemeLight($radius: 25px);
 }
 
 #stuff-i-can {
@@ -145,6 +154,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+    flex-wrap: wrap;
     ul {
         color: #fffff2;
         background-color: $brightPink;
@@ -159,6 +169,15 @@ body {
 
 #home-image-ts {
     width: 450px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+    #home-image-ts {
+        width: 250px;
+    }
+    .home-flex {flex-wrap: wrap;}
+    .title-image {height: 200px;}
 }
 
 //PROJECTS

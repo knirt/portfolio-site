@@ -14,17 +14,21 @@ export default function Home() {
                         <h1 className="title-text">
                             Hi, my name is Matthew Trinkus
                         </h1>
-                        <h1>This is a site made to convince you to hire me</h1>
+                        <h1>
+                            This is a site made to display what I know about
+                            developing sites and web apps
+                        </h1>
                     </div>
                     <img src={meIMG} alt="" className="title-image" />
                 </div>
                 <h1 id="stuff-i-can">Stuff I can do:</h1>
                 <div className="home-sub-head">
                     <h2 className="title-text">
-                        I can make web apps and deploy them, so I would like to
-                        make money doing that. Everything I know about
-                        development is self taught, I have no formal education
-                        or experience, but here is what I know:
+                        I can make and deploy web apps, so I am seeking
+                        employment in web-development. To be clear, everything I
+                        know about development is self taught, I have no formal
+                        education or experience. Here is what I have learned
+                        through Udemy courses and self study:
                     </h2>
                     <div id="list-flex">
                         <ul>
@@ -53,10 +57,10 @@ export default function Home() {
                         <img id="home-image-ts" src={tsIMG} alt="" />
                     </div>
                     <h2 className="title-text">
-                        For more info on this, my projects page has all the
-                        stuff I made that I figured was worth showing off plus
-                        descriptions of how I set the server up to host all the
-                        projects
+                        For more info on this, my projects page has everything I
+                        have made that I figured was worth showing off plus
+                        descriptions and links to the sites / source code. I
+                        deployed this site via NGINX on a Debian 10 VPS I own.
                     </h2>
                 </div>
             </div>
