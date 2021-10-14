@@ -31,7 +31,7 @@ $darkGrey: #382e59; //MAIN
     border-width: 1px;
     border-color: $lightPurple;
     border-radius: 20px;
-    background-color: $lightPurple;
+    background-color: $brightPink;
     padding: 10px;
     margin: 20px;
 }
@@ -176,8 +176,12 @@ body {
     #home-image-ts {
         width: 250px;
     }
-    .home-flex {flex-wrap: wrap;}
-    .title-image {height: 200px;}
+    .home-flex {
+        flex-wrap: wrap;
+    }
+    .title-image {
+        height: 200px;
+    }
 }
 
 //PROJECTS
@@ -187,6 +191,7 @@ body {
     font-size: 16px;
     width: 350px;
     text-align: center;
+    color: #28231d;
 }
 
 .projects-container {
@@ -200,9 +205,10 @@ body {
     @include borderThemeDark($radius: 20px);
     width: 120px;
     height: 60px;
-    background-color: $brightPink;
+    background-color: $darkPurple;
     margin: 10px;
     margin-top: 0px;
+    color: #fffff2;
 }
 
 #proj-btn-1 {
@@ -225,7 +231,8 @@ body {
 }
 
 .project-image {
-    @include borderThemeLight($radius: 20px);
+    @include borderThemeDark($radius: 20px);
+    border-width: 5px;
     height: 150px;
 }
 
