@@ -104,6 +104,13 @@ body {
     margin-right: 10px;
 }
 
+@media only screen and (max-width: 850px) {
+    .head-container {
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+}
+
 .nav-btn {
     background-color: $brightPink;
     color: #28231d;
@@ -268,4 +275,43 @@ body {
 
 .four-o-four {
     margin: 50px;
+}
+
+@media only screen and (max-width: 480px) {
+    .home-sub-head {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .head-flexbox {
+        text-align: center;
+    }
+    .container {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .nav-btn {
+        width: 80px;
+        height: 60px;
+        border-radius: 15px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .proj-img-footer {
+        height: 70px;
+        border-radius: 10px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    #proj-btn-1 {
+        width: 80px;
+    }
+    #proj-btn-2 {
+        width: 80px;
+    }
 }
