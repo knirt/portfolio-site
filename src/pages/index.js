@@ -28,7 +28,7 @@ export default function Home() {
                         employment in web-development. To be clear, everything I
                         know about development is self taught, I have no formal
                         education or experience. Here is what I have learned
-                        through Udemy courses and self study:
+                        through Udemy and self study:
                     </h2>
                     <div id="list-flex">
                         <ul>

@@ -18,10 +18,11 @@ const Contact = function () {
                     </p>
                     <br />
                     <p>
-                        For phone, just email and I would be happy to give you
-                        my phone number! It's just easier for me if all initial
-                        inquiries from this site come from one place. Plus I
-                        feel weird putting my phone number on the internet.
+                        For phone, just email me and I would be happy to give
+                        you my phone number! It's just easier for me if all
+                        initial inquiries from this site come from one place.
+                        Plus I'm not sure I want to put my phone number on the
+                        internet.
                     </p>
                     <br />
                 </div>
