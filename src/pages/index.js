@@ -15,8 +15,9 @@ export default function Home() {
                             Hi, my name is Matthew Trinkus
                         </h1>
                         <h1>
-                            This is a site made to display what I know about
-                            developing sites and web apps
+                            This is a site made to display my projects,
+                            interests, etc., to anyone interested for personal
+                            or professional reasons
                         </h1>
                     </div>
                     <img src={meIMG} alt="" className="title-image" />
